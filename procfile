@@ -1,1 +1,1 @@
-web: flask_sockets.worker main.py
+web: flask_sockets.worker main.py:app
