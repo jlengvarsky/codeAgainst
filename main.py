@@ -88,7 +88,7 @@ async def serve(ws, path):
   finally:
     pass
 
-start_server = websockets.serve(serve, "192.168.1.42", 8001)
+start_server = websockets.serve(serve, "127.0.0.1", 8765)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
